@@ -1,4 +1,3 @@
-cat > CONTRIBUTING.md << 'EOF'
 # Contributing to oracle-database-lab
 
 ## Branch naming
