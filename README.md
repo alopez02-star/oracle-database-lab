@@ -7,3 +7,5 @@ Name: Antonio López
 Professor: Richard Aviles Lopez
 editado desde Github
 
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for branch and commit conventions.
