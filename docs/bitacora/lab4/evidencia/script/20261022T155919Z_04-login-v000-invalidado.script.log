@@ -1,0 +1,12 @@
+
+SQLcl: Release 26.3 Production on Thu Oct 22 17:59:21 2026
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+Connection failed
+  USER          = admin_academia
+  URL           = jdbc:oracle:thin:@//localhost:1521/FREEPDB1
+  Error Message = ORA-01017: invalid credential or not authorized; logon denied
+
+https://docs.oracle.com/error-help/db/ora-01017/
+
