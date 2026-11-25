@@ -1,0 +1,17 @@
+== EVIDENCIA alumno=E041 hora=2026-11-25T18:47:46Z origen=09-alert-log
+== EVIDENCIA contenedor=e38ca20e9401 dbid=1509902213 arranque=2026-11-25T18:04:28 scn=7414369
+== 1. Errores ORA- en las 24 h anteriores a la lista de turno (2026-11-25 18:03:21 UTC) ==
+
+ERROR		VECES
+---------- ----------
+ORA-00800	   12
+ORA-65019	    2
+ORA-01536	    1
+ORA-00000	    1
+ORA-00031	    1
+== 2. Suspensión y reanudación de la carga reanudable (Parte F) ==
+
+TS			  MESSAGE_TEXT
+------------------------- ----------------------------------------------------------------------------------------------------
+2026-11-25 18:06:03.323   statement in resumable session 'carga-historico' was suspended due to
+2026-11-25 18:06:17.429   statement in resumable session 'carga-historico' was resumed
