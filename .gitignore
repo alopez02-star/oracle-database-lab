@@ -1,2 +1,6 @@
 config/.env
 backups/
+.claude/
+CLAUDE.md
+AGENTS.md
+.cursor/
