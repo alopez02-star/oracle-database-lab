@@ -1,0 +1,28 @@
+== EVIDENCIA alumno=E041 hora=2026-11-25T18:09:02Z origen=08-incidente2-intervencion
+== EVIDENCIA contenedor=e38ca20e9401 dbid=1509902213 arranque=2026-11-25T18:04:28 scn=7402738
+== Síntoma reproducido por el camino del consumidor (app.sh por academia_app) ==
+  USER          = app_academia
+  URL           = jdbc:oracle:thin:@//localhost:1521/academia_app
+  Error Message = ORA-12514: Cannot connect to database. Service academia_app is not registered with the listener at host localhost port 1521. (CONNECTION_ID=1i0sn6WvQGWMyfIgNUOruA==)
+== Intervención INC-602: arrancar el servicio (no reiniciar nada) y guardar el estado CON el servicio arrancado ==
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+Pluggable database altered.
+
+== Validación 1: el listener lo anuncia ==
+Service "academia_app" has 1 instance(s).
+  Instance "FREE", status READY, has 1 handler(s) for this service...
+Service "freepdb1" has 1 instance(s).
+  Instance "FREE", status READY, has 1 handler(s) for this service...
+== Validación 2: la aplicación entra por academia_app ==
+SQL Format Cleared
+
+SERVICIO        CONTENEDOR    USUARIO        
+--------------- ------------- ---------------
+academia_app    FREEPDB1      APP_ACADEMIA   
+

@@ -1,0 +1,20 @@
+== EVIDENCIA alumno=E041 hora=2026-11-25T18:08:13Z origen=08-incidente1-intervencion
+== EVIDENCIA contenedor=e38ca20e9401 dbid=1509902213 arranque=2026-11-25T18:04:28 scn=7402662
+== Intervención INC-601: terminar SOLO la sesión bloqueadora (19,31982) ==
+
+System altered.
+
+== Validación: fila 101 y sesiones bloqueadas ==
+
+SESIONES_BLOQUEADAS
+-------------------
+		  0
+
+
+Session altered.
+
+
+ESTUDIANTE_ID ESTADO
+------------- --------------------
+	  101 ACTIVO
+

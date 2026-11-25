@@ -1,0 +1,37 @@
+== EVIDENCIA alumno=E041 hora=2026-11-25T18:09:44Z origen=08-incidente3-intervencion
+== EVIDENCIA contenedor=e38ca20e9401 dbid=1509902213 arranque=2026-11-25T18:04:28 scn=7403342
+== Síntoma reproducido por el camino del consumidor ==
+  Error Message = ORA-28000: The account is locked; login denied.
+== Evidencia preservada: quién bloqueó la cuenta (auditoría unificada) y el perfil ==
+
+Session altered.
+
+
+HORA		    DBUSERNAME	 ACTION_NAME	RETURN_CODE SQL_TEXT
+------------------- ------------ -------------- ----------- ------------------------------------------------------------
+2026-11-25 18:09:22 SYS 	 ALTER USER		  0 ALTER USER app_academia ACCOUNT LOCK
+
+
+USERNAME       ACCOUNT_STATUS	PROFILE    FAILED_LOGIN_ATTEMPTS
+-------------- ---------------- ---------- ---------------------
+APP_ACADEMIA   LOCKED		DEFAULT    10
+
+== Intervención INC-603: desbloquear la cuenta (sin tocar la contraseña) ==
+
+Session altered.
+
+
+User altered.
+
+
+USERNAME       ACCOUNT_STATUS
+-------------- ----------------
+APP_ACADEMIA   OPEN
+
+== Validación: la aplicación entra por academia_app ==
+SQL Format Cleared
+
+SERVICIO        CONTENEDOR    USUARIO        
+--------------- ------------- ---------------
+academia_app    FREEPDB1      APP_ACADEMIA   
+
